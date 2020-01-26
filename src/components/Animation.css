@@ -1,0 +1,25 @@
+.innerCircle {
+  background-color:  #5AC81E;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  position: absolute;
+}
+
+.middleCircle {
+  background-color: #E6FAB4;
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  position: absolute;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: white;
+}
