@@ -1,28 +1,49 @@
-# Ombori React Code Test
+#  Ombori Project (React Code Test)
 
-Hi there, we're really excited that you've made it this far in our interview process and look forward to getting to know you better.
+Ombori Project is a web application based on the React JS framework. It's purpose is to show list of people from [reqres.in](https://reqres.in/).
 
-At Ombori, we strive to build fantastic apps using well structured and efficient code.
-The purpose of this task is to see how you solve problems and to make sure that you follow our linting rules as well as industry best practices.
+## Motivation
 
-We've scaffolded a very basic project that will serve as your starting point for the task.
-Make sure you've got eslint integrated in your editor or run the lint task and fix any errors before submitting your code for review. If there's a rule you disagree with, you can change it but we will ask you to motivate why during our feedback session on this task.
+This app has been made to demonstrate programming skills, especially with the use of the React JS.
 
-___
+## Presentation
 
-What the test app should do:
+At the application startup the loading screen is shown: pulsing animation that lasts 3 seconds. Then main screen of application loads.
 
-* Display a custom loading component for 3 seconds
-* Fetch user data from https://reqres.in/
-* Display those users in a scrollable view that lazy loads more users when you've reached the bottom of the list, if there are no more users to load it should indicate that there are no more users.
-* Be responsive, look great and work well on different devices, especially various mobile screens
+![Loading Screen](./screenshots/01_loadScreen.png)
 
-We've prepared some screenshots in the design folder as well as a video of what the loading component should look like.
+Main screen contains the list of peolpe, fetched from [reqres.in](https://reqres.in/). 
+While loading, the main screen sends requests to the URL and forms the list of people
+Every item in the list contains person's avatar, first name and last name. 
+When list reaches the end of the screen, the loading stops 
 
-___
+![Main Screen](./screenshots/02_mainScreen.png)
 
-Those are the requirements. If you wish to show off more of your skillset, feel free to expand upon the app, perhaps integrating a state management library like Redux to handle the fetching of data. Using TypeScript will be a big ➕. If you're really into functional programming, feel free to use something like Ramda. It's really up to you!
+If the app has loaded all of the data, at the end of the page relevant notice shows.
 
-We put no strict requirements on how you choose to solve any of the points in this task. We only ask that you be able to motivate your choices.
+## Technology
 
-![You got this!](https://media.giphy.com/media/ClcWrARkrq1GM/giphy.gif)
+The application's written in React JS framework. It consists of next modules.
+1. index.tsx - React JS component, the main module, which imports all others and provides the logic of the application.
+1. `components` - folder with working components:
+    1. UserList.tsx - React JS component for rendering the list of people. It consists of the title and the scrollable list view.
+    1. AnimationPulse.tsx - React JS component for rendering the loading screen. It contains animated seqence that uses CSS animation.
+    1. Api.ts - JavaScript module with API to connect to the destination server. This module provides lower level of abstraction in application's model.
+    1. store.ts - file for configuring Redux store.
+1. `actions` folder - contains redux action modules:
+    1. api.ts - action module for init API and keep to global store.
+    1. user.ts - action module for requesting data and loading to global store.
+1. `reducers` folder - contains redux reducers:
+    1. apiReducer.ts - reducer for sending api data to global store.
+    1. userReducer.ts - reducer for sending user data to global store.
+1. *.css -  Files with CSS styles for components.
+
+Every module is wrapped to Typescript for type safety.
+
+## Linter
+
+Before submitting this code, all of linter's notices was checked and fixed.
+
+## Author
+
+The Ombori Project is made by [tuor4eg](https://github.com/tuor4eg). Thanks for your attention!
