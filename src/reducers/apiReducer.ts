@@ -4,7 +4,7 @@ const initialState = {
   api: null,
 };
 
-const apiReducer = (state = initialState, action) => {
+const apiReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case INIT_API: {
       const { api } = action.payload;

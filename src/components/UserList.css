@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  min-height: 101vh;
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #c5c2c2;
+  padding: 15px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.user-info {
+  margin-left: 10px;
+}
+
+.userlist {
+  background-color: #c5c2c2;
+}

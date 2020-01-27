@@ -6,15 +6,17 @@
  */
 
 export default class ServerApi {
-  constructor(host) {
+  host: string;
+
+  constructor(host: string) {
     this.host = host;
   }
 
-  async getUserList(page) {
+  async getUserList(page: number) {
     const query = '/api/users?page=';
     const res = await fetch(`${this.host}${query}${page}`, {
       method: 'GET',
-      'Content-Type': 'application/json',
+      headers: new Headers({ 'content-type': 'application/json' }),
     });
     const data = await res.json();
     return data;

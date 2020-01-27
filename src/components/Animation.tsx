@@ -5,21 +5,20 @@ interface Props {};
 interface MyState {};
 
 class Animation extends React.Component<Props, MyState> {
+  /**
+   * Component of animated intro
+   * @param props
+   */
   constructor(props: Props) {
     super(props);
-    this.state = {
-
-    };
-  }
-
-  componentDidMount() {
-
+    this.state = {};
   }
 
   render() {
     return(
-      <div className={'wrapper'}>
-        <div className={'middleCircle'} />
+      <div className={'wrapper-intro'}>
+        <div className={'middleCircle middleCircle-animated'} />
+        <div className={'middleCircle middleCircle-animated2'} />
         <div className={'innerCircle'} />
       </div>
     )
