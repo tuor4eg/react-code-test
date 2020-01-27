@@ -8,7 +8,7 @@ This app has been made to demonstrate programming skills, especially with the us
 
 ## Installation and starting app
 
-The applications installs with command `npm install`. After that it can be started with command `npm start`.
+The application installs with command `npm install`. After that it can be started with command `npm start`.
 
 ## Presentation
 
@@ -28,7 +28,8 @@ If the app has loaded all of the data, at the end of the page relevant notice sh
 ## Technology
 
 The application's written in React JS framework. It consists of next modules.
-1. index.tsx - React JS component, the main module, which imports all others and provides the logic of the application.
+1. index.tsx - React JS component, where application connect with Redux store.
+1. App.tsx - React JS component, the main module, which imports all others and provides the logic of the application.
 1. `components` - folder with working components:
     1. UserList.tsx - React JS component for rendering the list of people. It consists of the title and the scrollable list view.
     1. AnimationPulse.tsx - React JS component for rendering the loading screen. It contains animated seqence that uses CSS animation.
