@@ -6,6 +6,10 @@ Ombori Project is a web application based on the React JS framework. It's purpos
 
 This app has been made to demonstrate programming skills, especially with the use of the React JS.
 
+## Installation and starting app
+
+The applications installs with command `npm install`. After that it can be started with command `npm start`.
+
 ## Presentation
 
 At the application startup the loading screen is shown: pulsing animation that lasts 3 seconds. Then main screen of application loads.
