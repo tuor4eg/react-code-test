@@ -32,7 +32,7 @@ The application's written in React JS framework. It consists of next modules.
 1. App.tsx - React JS component, the main module, which imports all others and provides the logic of the application.
 1. `components` - folder with working components:
     1. UserList.tsx - React JS component for rendering the list of people. It consists of the title and the scrollable list view.
-    1. AnimationPulse.tsx - React JS component for rendering the loading screen. It contains animated seqence that uses CSS animation.
+    1. AnimationPulse.tsx - React JS component for rendering the loading screen. It contains animated sequence that uses CSS animation.
     1. Api.ts - JavaScript module with API to connect to the destination server. This module provides lower level of abstraction in application's model.
     1. store.ts - file for configuring Redux store.
 1. `actions` folder - contains redux action modules:
@@ -43,7 +43,7 @@ The application's written in React JS framework. It consists of next modules.
     1. userReducer.ts - reducer for sending user data to global store.
 1. *.css -  Files with CSS styles for components.
 
-Every module is wrapped to Typescript for type safety.
+Every module is wrapped as Typescript module for type safety.
 
 ## Linter
 
